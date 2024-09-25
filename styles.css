@@ -1,238 +1,238 @@
 /* Apply box-sizing for easier layout control */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Light mode background */
-    color: #333; /* Light mode text color */
-    transition: background-color 0.3s, color 0.3s;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light mode background */
+  color: #333; /* Light mode text color */
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center items vertically */
-    padding: 1rem 2rem; /* Add horizontal padding */
-    background-color: #007bff; /* Header background */
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  padding: 1rem 2rem; /* Add horizontal padding */
+  background-color: #007bff; /* Header background */
+  color: white;
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: url('hero-bg.jpg') no-repeat center center/cover; 
-    color: white;
-    border-bottom: 4px solid #0056b3;
+  text-align: center;
+  padding: 80px 20px;
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: white;
+  border-bottom: 4px solid #0056b3;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin: 0;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .hero .cta {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #ff5722; /* CTA button background */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff5722; /* CTA button background */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .hero .cta.secondary {
-    background-color: transparent;
-    border: 2px solid white;
+  background-color: transparent;
+  border: 2px solid white;
 }
 
 .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px; /* Add max width to center the content */
-    margin: auto; /* Center the grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* Add max width to center the content */
+  margin: auto; /* Center the grid */
 }
 
 .feature-card {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .presentation-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px; /* Add max width to center the content */
-    margin: auto; /* Center the grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* Add max width to center the content */
+  margin: auto; /* Center the grid */
 }
 
 .presentation-marquee {
-    overflow: hidden; /* Hide overflow */
-    white-space: nowrap; /* Prevent wrapping */
-    position: relative; 
-    height: 200px; /* Set height */
-    background-color: #f4f4f4; /* Optional: Background color */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent wrapping */
+  position: relative;
+  height: 200px; /* Set height */
+  background-color: #f4f4f4; /* Optional: Background color */
 }
 
 .presentation-list {
-    display: inline-flex; /* Use inline-flex for smoother scrolling */
-    animation: scroll 30s linear infinite; /* Animation duration */
+  display: inline-flex; /* Use inline-flex for smoother scrolling */
+  animation: scroll 30s linear infinite; /* Animation duration */
 }
 
 .presentation-card {
-    display: inline-block; /* Align cards horizontally */
-    margin-right: 20px; /* Space between cards */
-    vertical-align: top; /* Align cards to the top */
-    background-color: white; /* Card background */
-    border-radius: 5px; /* Optional: Rounded corners */
-    padding: 10px; /* Optional: Padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow */
+  display: inline-block; /* Align cards horizontally */
+  margin-right: 20px; /* Space between cards */
+  vertical-align: top; /* Align cards to the top */
+  background-color: white; /* Card background */
+  border-radius: 5px; /* Optional: Rounded corners */
+  padding: 10px; /* Optional: Padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow */
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0); /* Start position */
-    }
-    to {
-        transform: translateX(-50%); /* Move to left, adjust for total width */
-    }
+  from {
+    transform: translateX(0); /* Start position */
+  }
+  to {
+    transform: translateX(-50%); /* Move to left, adjust for total width */
+  }
 }
-
 
 .presentation-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 #upcoming-presentations {
-    background-color: #f0f8ff; /* Light background for contrast */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 800px; /* Center the content */
-    margin: auto; /* Centering */
-    text-align: center; /* Center text */
+  background-color: #f0f8ff; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px; /* Center the content */
+  margin: auto; /* Centering */
+  text-align: center; /* Center text */
 }
 
 .upcoming-list {
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Space between items */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between items */
 }
 
 .upcoming-item {
-    background-color: #ffffff; /* Card background */
-    border-radius: 8px; /* Rounded corners */
-    padding: 15px; /* Padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow */
-    transition: transform 0.2s; /* Smooth hover effect */
+  background-color: #ffffff; /* Card background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow */
+  transition: transform 0.2s; /* Smooth hover effect */
 }
 
 .upcoming-item:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .cta {
-    background-color: #007bff; /* Button background */
-    color: white; /* Button text color */
-    padding: 10px 15px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded button */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Inline-block for button */
-    transition: background-color 0.3s; /* Smooth transition */
+  background-color: #007bff; /* Button background */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded button */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline-block for button */
+  transition: background-color 0.3s; /* Smooth transition */
 }
 
 .cta:hover {
-    background-color: #0056b3; /* Darker on hover */
+  background-color: #0056b3; /* Darker on hover */
 }
 
-
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #007bff;
-    color: white;
+  text-align: center;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
 }
 
 .footer-content {
-    max-width: 800px;
-    margin: auto; /* Center footer content */
+  max-width: 800px;
+  margin: auto; /* Center footer content */
 }
 
 .footer-links a {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* Dark mode styles */
 .dark-mode {
-    background-color: #1a1a1a;
-    color: #eaeaea;
+  background-color: #1a1a1a;
+  color: #eaeaea;
 }
 
 .dark-mode header {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .dark-mode nav a {
-    color: #eaeaea;
+  color: #eaeaea;
 }
 
 .dark-mode .hero {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .dark-mode .cta {
-    background-color: #ff7e50;
+  background-color: #ff7e50;
 }
 
 .dark-mode .footer-content {
-    color: #eaeaea;
+  color: #eaeaea;
 }
 
 .dark-mode .footer-links a {
-    color: #eaeaea;
+  color: #eaeaea;
 }
 
 /* Ensure text in feature cards and presentation cards are also adjusted */
 .feature-card,
 .presentation-card {
-    color: #333; /* Default text color for cards */
+  color: #333; /* Default text color for cards */
 }
 
 .dark-mode .feature-card,
 .dark-mode .presentation-card {
-    color: #eaeaea; /* Dark mode text color for cards */
+  color: #eaeaea; /* Dark mode text color for cards */
 }

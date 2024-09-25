@@ -40,7 +40,7 @@
     e.addEventListener("click", () => {
       navbarToggler.classList.remove("active");
       navbarCollapse.classList.remove("show");
-    })
+    }),
   );
   navbarToggler.addEventListener("click", function () {
     navbarToggler.classList.toggle("active");
@@ -92,12 +92,11 @@
   };
 })();
 
-
-document.addEventListener('DOMContentLoaded', function() {
-  const slidesContent = document.querySelector('.slides-content');
+document.addEventListener("DOMContentLoaded", function () {
+  const slidesContent = document.querySelector(".slides-content");
   const slides = slidesContent.children;
   const totalSlides = slides.length;
-  
+
   // Duplicate slides to create loop effect
   slidesContent.innerHTML += slidesContent.innerHTML;
 
@@ -108,15 +107,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // Function to move to next slide
   function moveToNextSlide() {
     currentIndex++;
-    
+
     // Transition effect
-    slidesContent.style.transition = 'transform 0.5s ease-in-out';
+    slidesContent.style.transition = "transform 0.5s ease-in-out";
     slidesContent.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
 
     // When the last slide is reached, reset to the first slide seamlessly
     if (currentIndex === totalSlides) {
       setTimeout(() => {
-        slidesContent.style.transition = 'none'; // Remove transition
+        slidesContent.style.transition = "none"; // Remove transition
         currentIndex = 0;
         slidesContent.style.transform = `translateX(0px)`; // Jump to the first slide
       }, 500); // Timeout matches transition duration
@@ -126,5 +125,3 @@ document.addEventListener('DOMContentLoaded', function() {
   // Automatically move slides every 3 seconds
   // setInterval(moveToNextSlide, 5000);
 });
-
-
