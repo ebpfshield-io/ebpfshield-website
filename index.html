@@ -62,11 +62,40 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
+
+    <style>
+      @keyframes moveBanner {
+          0% {
+              right: -100%;
+          }
+          100% {
+              right: 100%;
+          }
+      }
+
+      .banner {
+          position: fixed;
+          top: 0;
+          right: 100%;
+          width: 100%;
+          background-color: #ffcc00;
+          color: #000;
+          font-size: 20px;
+          padding: 10px;
+          white-space: nowrap;
+          z-index: 9999;
+          animation: moveBanner 10s linear infinite;
+      }
+  </style>
   </head>
 
   <body>
+    
     <!-- ====== Header Start ====== -->
     <header class="ud-header">
+      <div class="banner">
+        <p>🚧 Construction in Progress | Website in Development 🚧</p>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
